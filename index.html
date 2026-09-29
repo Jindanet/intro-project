@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน | สมัครเข้าศึกษาต่อ มจพ.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="assets/kmutnb-logo.png" alt="โลโก้ มจพ.">
+        </a>
+        <div class="name">
+            <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+        <p class="year">การสมัครเข้าศึกษาต่อ<br>ปีการศึกษา 2570</p>
+    </header>
+    <!-- Content -->
+    <main class="container register">
+        <section class="info" aria-label="รายละเอียดการสมัคร">
+            <p>การลงทะเบียนเพื่อสมัครเข้าศึกษาต่อผู้สมัครต้องยอมรับเงื่อนไขและข้อตกลงที่มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือกำหนดก่อนจึงจะทำการสมัครได้ ซึ่งจะปรากฏในหน้าถัดไปภายหลังที่ผู้สมัครทำการลงทะเบียนเพื่อสมัครเรียนแล้ว</p>
+            <p>จำนวนอันดับการสมัคร</p>
+            <ul>
+                <li>โปรดตรวจสอบจากประกาศรับสมัครของคณะ/วิทยาลัย หรือระเบียบการรับสมัครในโครงการที่เปิดรับ</li>
+            </ul>
+            <p>ค่าสมัครสอบ</p>
+            <ul>
+                <li>ระดับประกาศนียบัตรวิชาชีพ เก็บค่าสมัครสอบเริ่มต้นสำหรับการเลือกสาขาอันดับ 1 เป็นเงิน 300 บาท และอันดับถัดไปสาขาละ 100 บาท (ถ้ามี)</li>
+                <li>ระดับปริญญาตรี เก็บค่าสมัครสอบเริ่มต้นสำหรับการเลือกสาขาวิชาอันดับ 1 เป็นเงิน 400 บาท และอันดับถัดไปสาขาวิชาละ 100 บาท (ถ้ามี)</li>
+            </ul>
+        </section>
+        <h1 class="title">ลงทะเบียน</h1>
+        <!-- ThaID Mockup -->
+        <div class="thaid">
+            <a class="thaid-btn" href="terms.html">
+                <img src="assets/thaid.webp" alt="ThaID">
+                <span>เข้าสู่ระบบด้วย ThaID</span>
+            </a>
+            <div class="or">หรือกรอกข้อมูลเพื่อลงทะเบียน</div>
+        </div>
+        <form class="register-form" action="login.html" method="get">
+            <div class="register-row">
+                <div class="register-col">
+                    <label for="register-id">เลขประจำตัวประชาชน / เลขที่หนังสือเดินทาง<span class="red">*</span></label>
+                    <input type="text" id="register-id" placeholder="11999000xxxxx" required>
+                    <label for="first-name">ชื่อ (ไทย)<span class="red">*</span></label>
+                    <input type="text" id="first-name" placeholder="กรอกชื่อของคุณ   สมชาย" required>
+                    <label for="last-name">นามสกุล (ไทย)<span class="red">*</span></label>
+                    <input type="text" id="last-name" placeholder="กรอกนามสกุลของคุณ   ใจดี" required>
+                    <label for="phone">เบอร์ติดต่อ<span class="red">*</span></label>
+                    <input type="tel" id="phone" placeholder="กรอกเบอร์โทรศัพท์ 089-xxx-xxxx" required>
+                </div>
+                <div class="register-col">
+                    <label for="email">อีเมล<span class="red">*</span></label>
+                    <input type="email" id="email" placeholder="กรอกอีเมลติดต่อ  ex@gmail.com" required>
+                    <label for="confirm-email">ยืนยันอีเมล<span class="red">*</span></label>
+                    <input type="email" id="confirm-email" placeholder="กรอกอีเมลติดต่อเดิมเพื่อยืนยัน" required>
+                    <label for="password">รหัสผ่าน<span class="red">*</span></label>
+                    <input type="password" id="password" placeholder="กรอกรหัสผ่าน" required>
+                    <label for="confirm-password">ยืนยันรหัสผ่าน<span class="red">*</span></label>
+                    <input type="password" id="confirm-password" placeholder="กรอกรหัสผ่านยืนยันอีกครั้ง" required>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn" type="submit">ลงทะเบียน</button>
+            </div>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 สำนักคอมพิวเตอร์และเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p>
+    </footer>
+</body>
+</html>

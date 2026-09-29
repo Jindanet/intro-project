@@ -1,0 +1,239 @@
+/* Application */
+.apply-form {
+    padding: 25px 3% 25px 12%;
+}
+
+.part {
+    margin-bottom: 25px;
+}
+
+.part h2 {
+    font-size: 28px;
+    color: #bb5c4a;
+    margin-bottom: 20px;
+}
+
+.apply-form label, .form-row, .address, .birthday-row, .fullname p {
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.apply-form input[type=text], .apply-form input[type=email],
+.apply-form input[type=tel], .apply-form input[type=number], .apply-form select {
+    border: 1px solid #33383b;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 17px;
+}
+
+/* Education */
+.form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+
+.form-row > span {
+    width: 310px;
+}
+
+.radio-label {
+    display: inline-block;
+    margin: 0 18px 0 0;
+}
+
+.radio-label input {
+    margin-right: 6px;
+}
+
+.education-select .form-group, .school-input .form-group, .grade .form-group {
+    display: flex;
+    align-items: center;
+    max-width: 683px;
+}
+
+.education-select label, .school-input label {
+    width: 45%;
+    margin: 0;
+}
+
+.education-select label {
+    text-align: right;
+    padding-right: 65px;
+}
+
+.education-select select, .school-input input {
+    width: 55%;
+    border-radius: 10px;
+}
+
+.apply-form .school-input input {
+    border-radius: 10px;
+}
+
+.grade label {
+    width: 67%;
+    margin: 0;
+}
+
+.grade input {
+    width: 33%;
+}
+
+/* Course */
+.course-table {
+    min-width: 760px;
+    table-layout: fixed;
+}
+
+.course-table td {
+    text-align: center;
+    padding: 6px 12px;
+}
+
+.course-table select {
+    height: 34px;
+    border: 1px solid #cfd3d7;
+}
+
+/* ThaID Mockup */
+.thaid-data {
+    max-width: 840px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cdd5e5;
+    border-radius: 8px;
+    background-color: #f5f7fb;
+}
+
+.thaid-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.thaid-heading img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.thaid-heading h3, .thaid-heading h4 {
+    font-size: 22px;
+    color: #293b70;
+}
+
+.thaid-data label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.thaid-data input {
+    margin-right: 8px;
+}
+
+.thaid-data p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Personal */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.half {
+    width: 48%;
+}
+
+.third {
+    width: 31%;
+}
+
+.personal > .row {
+    max-width: 840px;
+}
+
+.personal-input {
+    max-width: 630px;
+}
+
+.fullname {
+    margin-bottom: 22px;
+}
+
+.fullname p {
+    margin-bottom: 12px;
+}
+
+.fullname input {
+    width: 48%;
+}
+
+.birthday-row, .birthday {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.birthday .day { width: 80px; }
+.birthday .month { width: 175px; }
+.birthday .birth-year { width: 125px; }
+
+/* Father / Mother */
+.parent {
+    max-width: 660px;
+    margin-bottom: 35px;
+}
+
+.parent h3 {
+    color: #bb5c4a;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.parent .form-row > span {
+    width: 105px;
+}
+
+.parent .radio-label {
+    font-size: 20px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address .radio-label {
+    margin-left: 15px;
+}
+
+.apply-form .buttons {
+    margin-top: 90px;
+}
+
+@media (max-width: 1200px) {
+    .apply-form { padding: 25px; }
+    .apply-form label, .form-row { font-size: 20px; }
+}
+
+@media (max-width: 700px) {
+    .apply-form { padding: 20px 15px; }
+    .part h2 { font-size: 23px; }
+    .half, .third, .fullname input { width: 100%; }
+    .fullname input { margin-bottom: 12px; }
+    .education-select .form-group, .school-input .form-group, .grade .form-group { display: block; }
+    .education-select label, .school-input label, .grade label { width: 100%; text-align: left; margin-bottom: 12px; }
+    .education-select select, .school-input input, .grade input { width: 100%; }
+    .form-row > span { width: 100%; margin-bottom: 12px; }
+    .radio-label { margin-bottom: 10px; }
+}

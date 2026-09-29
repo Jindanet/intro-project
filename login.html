@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ | สมัครเข้าศึกษาต่อ มจพ.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="assets/kmutnb-logo.png" alt="โลโก้ มจพ.">
+        </a>
+        <div class="name">
+            <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+        <p class="year">การสมัครเข้าศึกษาต่อ<br>ปีการศึกษา 2570</p>
+    </header>
+    <!-- Content -->
+    <main class="login">
+        <form class="login-form" action="terms.html" method="get">
+            <h1 class="title">เข้าสู่ระบบ</h1>
+            <label for="login-id">เลขประจำตัวประชาชน / เลขที่หนังสือเดินทาง<span class="red">*</span></label>
+            <input type="text" id="login-id" placeholder="11999000xxxxx" required>
+            <label for="login-password">รหัสผ่าน<span class="red">*</span></label>
+            <input type="password" id="login-password" placeholder="กรอกรหัสผ่าน" required>
+            <div class="buttons">
+                <button class="btn" type="submit">เข้าสู่ระบบ</button>
+            </div>
+            <!-- ThaID Mockup -->
+            <div class="thaid">
+                <div class="or">หรือ</div>
+                <a class="thaid-btn" href="terms.html">
+                    <img src="assets/thaid.webp" alt="ThaID">
+                    <span>เข้าสู่ระบบด้วย ThaID</span>
+                </a>
+            </div>
+            <div class="links">
+                <details class="forgot">
+                    <summary>ลืมรหัสผ่านหรือไม่?</summary>
+                    <p>เว็บไซต์นี้เป็นแบบจำลองสำหรับการศึกษา ยังไม่มีระบบบัญชีผู้ใช้หรือกู้คืนรหัสผ่าน สามารถกรอกข้อมูลตัวอย่างเพื่อดูหน้าถัดไปได้</p>
+                </details>
+                <p>สร้างบัญชีผู้ใช้งาน<a href="index.html">คลิกที่นี่</a></p>
+            </div>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 สำนักคอมพิวเตอร์และเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p>
+    </footer>
+</body>
+</html>

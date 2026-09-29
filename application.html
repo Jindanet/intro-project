@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กรอกข้อมูลการสมัคร | สมัครเข้าศึกษาต่อ มจพ.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="assets/kmutnb-logo.png" alt="โลโก้ มจพ.">
+        </a>
+        <div class="name">
+            <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+        <p class="year">การสมัครเข้าศึกษาต่อ<br>ปีการศึกษา 2570</p>
+    </header>
+    <!-- Content -->
+    <main class="container apply">
+        <h1 class="title">2. เลือกสาขาวิชาและป้อนข้อมูลการสมัคร</h1>
+        <form class="box apply-form" action="confirmation.html" method="get">
+            <!-- 2.1 ข้อมูลวุฒิการศึกษาที่ใช้สมัคร -->
+            <section class="part education">
+                <h2>2.1 ข้อมูลวุฒิการศึกษาที่ใช้สมัคร</h2>
+                <div class="form-row">
+                    <span id="qualification-label">วุฒิการศึกษาที่ใช้สมัคร<span class="red">*</span></span>
+                    <div class="radio">
+                        <label class="radio-label"><input name="qualification" required type="radio" value="1"> ม.3</label>
+                        <label class="radio-label"><input name="qualification" required type="radio" value="2"> ปวช</label>
+                        <label class="radio-label"><input name="qualification" required type="radio" value="3"> ปวส</label>
+                        <label class="radio-label"><input name="qualification" required type="radio" value="4"> อนุปริญญา</label>
+                    </div>
+                </div>
+                <div class="education-select">
+                    <div class="form-group">
+                        <label for="education-0">ประเภทวิชา<span class="red">*</span></label>
+                        <select id="education-0" required>
+                            <option value="">-</option>
+                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option>อุตสาหกรรม</option>
+                            <option>พาณิชยกรรม</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="education-1">กลุ่มวิชา<span class="red">*</span></label>
+                        <select id="education-1" required>
+                            <option value="">-</option>
+                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option>อุตสาหกรรม</option>
+                            <option>พาณิชยกรรม</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="education-2">สาขาวิชา<span class="red">*</span></label>
+                        <select id="education-2" required>
+                            <option value="">-</option>
+                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option>อุตสาหกรรม</option>
+                            <option>พาณิชยกรรม</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="education-3">สาขางาน<span class="red">*</span></label>
+                        <select id="education-3" required>
+                            <option value="">-</option>
+                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option>อุตสาหกรรม</option>
+                            <option>พาณิชยกรรม</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <!-- 2.2 ข้อมูลสถานที่ศึกษาและสถานะการศึกษาปัจจุบัน -->
+            <section class="part school">
+                <h2>2.2 ข้อมูลสถานที่ศึกษาและสถานะการศึกษาปัจจุบัน</h2>
+                <div class="school-input">
+                    <div class="form-group">
+                        <label for="school-province">จังหวัดที่ตั้งสถานศึกษา<span class="red">*</span></label>
+                        <input id="school-province" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="school-name">ชื่อสถานศึกษา<span class="red">*</span></label>
+                        <input id="school-name" type="text" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <span id="education-status-label">สถานะการศึกษา<span class="red">*</span></span>
+                    <div class="radio">
+                        <label class="radio-label"><input name="education-status" required type="radio" value="1"> สำเร็จการศึกษา</label>
+                        <label class="radio-label"><input name="education-status" required type="radio" value="2"> กำลังศึกษาอยู่</label>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="form-group">
+                        <label for="grade">คะแนนเฉลี่ยสะสมถึงภาคเรียนสุดท้าย<span class="red">*</span></label>
+                        <input id="grade" type="number" required min="0" max="4" step="0.01">
+                    </div>
+                </div>
+            </section>
+            <!-- 2.3 ข้อมูลคณะและสาขาวิชาที่สมัคร -->
+            <section class="part course">
+                <h2>2.3 ข้อมูลคณะและสาขาวิชาที่สมัคร</h2>
+                <div class="table-box">
+                    <table class="course-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="number">ลำดับที่</th>
+                                <th scope="col" class="faculty">คณะ / หลักสูตร</th>
+                                <th scope="col">สาขาวิชา</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <select aria-label="คณะอันดับที่ 1" id="faculty-1" required>
+                                        <option value="">— เลือกคณะ —</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะวิศวกรรมศาสตร์</option>
+                                        <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select aria-label="สาขาวิชาอันดับที่ 1" id="major-1" required>
+                                        <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
+                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option>เทคโนโลยีสารสนเทศ</option>
+                                        <option>วิทยาการคอมพิวเตอร์</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <select aria-label="คณะอันดับที่ 2" id="faculty-2">
+                                        <option value="">— เลือกคณะ —</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะวิศวกรรมศาสตร์</option>
+                                        <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select aria-label="สาขาวิชาอันดับที่ 2" id="major-2">
+                                        <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
+                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option>เทคโนโลยีสารสนเทศ</option>
+                                        <option>วิทยาการคอมพิวเตอร์</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <select aria-label="คณะอันดับที่ 3" id="faculty-3">
+                                        <option value="">— เลือกคณะ —</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะวิศวกรรมศาสตร์</option>
+                                        <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select aria-label="สาขาวิชาอันดับที่ 3" id="major-3">
+                                        <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
+                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option>เทคโนโลยีสารสนเทศ</option>
+                                        <option>วิทยาการคอมพิวเตอร์</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <select aria-label="คณะอันดับที่ 4" id="faculty-4">
+                                        <option value="">— เลือกคณะ —</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะวิศวกรรมศาสตร์</option>
+                                        <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select aria-label="สาขาวิชาอันดับที่ 4" id="major-4">
+                                        <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
+                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option>เทคโนโลยีสารสนเทศ</option>
+                                        <option>วิทยาการคอมพิวเตอร์</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <select aria-label="คณะอันดับที่ 5" id="faculty-5">
+                                        <option value="">— เลือกคณะ —</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะวิศวกรรมศาสตร์</option>
+                                        <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select aria-label="สาขาวิชาอันดับที่ 5" id="major-5">
+                                        <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
+                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option>เทคโนโลยีสารสนเทศ</option>
+                                        <option>วิทยาการคอมพิวเตอร์</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <select aria-label="คณะอันดับที่ 6" id="faculty-6">
+                                        <option value="">— เลือกคณะ —</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะวิศวกรรมศาสตร์</option>
+                                        <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select aria-label="สาขาวิชาอันดับที่ 6" id="major-6">
+                                        <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
+                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option>เทคโนโลยีสารสนเทศ</option>
+                                        <option>วิทยาการคอมพิวเตอร์</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- 2.4 ข้อมูลส่วนบุคคลและสถานที่ติดต่อ -->
+            <section class="part personal">
+                <h2>2.4 ข้อมูลส่วนบุคคลและสถานที่ติดต่อ</h2>
+                <!-- เลือกดึงข้อมูล ThaID เป็น mockup เท่านั้น -->
+                <div class="thaid-data">
+                    <div class="thaid-heading">
+                        <img src="assets/thaid.webp" alt="ThaID">
+                        <h3>ข้อมูลผู้สมัครจาก ThaID</h3>
+                    </div>
+                    <label for="thaid-personal">
+                        <input type="checkbox" id="thaid-personal">
+                        ดึงข้อมูลบัตรประชาชน และชื่อ-นามสกุลจาก ThaID
+                    </label>
+                    <label for="thaid-address">
+                        <input type="checkbox" id="thaid-address">
+                        ดึงข้อมูลที่อยู่ปัจจุบันจาก ThaID
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="form-group third">
+                        <label for="citizen-id">เลขประจำตัวประชาชน<span class="red">*</span></label>
+                        <input id="citizen-id" type="text" placeholder="11999000xxxxx" required inputmode="numeric" pattern="[0-9]{13}" maxlength="13">
+                    </div>
+                    <div class="form-group third">
+                        <label for="title">คำนำหน้าชื่อ<span class="red">*</span></label>
+                        <select id="title" required>
+                            <option>นาย/Mr.</option>
+                            <option>นาง/Mrs.</option>
+                            <option>นางสาว/Miss</option>
+                        </select>
+                    </div>
+                    <div class="form-group third">
+                        <label for="religion">ศาสนา<span class="red">*</span></label>
+                        <select id="religion" required>
+                            <option>ศาสนาพุทธ</option>
+                            <option>ศาสนาคริสต์</option>
+                            <option>ศาสนาอิสลาม</option>
+                            <option>อื่นๆ</option>
+                            <option>ไม่มีศาสนา</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="personal-input">
+                    <div class="fullname">
+                        <p>ชื่อ นามสกุล (ภาษาไทย)<span class="red">*</span></p>
+                        <div class="row">
+                            <input id="thai-first" aria-label="ชื่อภาษาไทย" type="text" placeholder="ชื่อภาษาไทย" required class="half">
+                            <input id="thai-last" aria-label="นามสกุลภาษาไทย" type="text" placeholder="นามสกุลภาษาไทย" required class="half">
+                        </div>
+                    </div>
+                    <div class="fullname">
+                        <p>ชื่อ นามสกุล (ภาษาอังกฤษ)<span class="red">*</span></p>
+                        <div class="row">
+                            <input id="english-first" aria-label="ชื่อภาษาอังกฤษ" type="text" placeholder="FIRST NAME" required class="half">
+                            <input id="english-last" aria-label="นามสกุลภาษาอังกฤษ" type="text" placeholder="LAST NAME" required class="half">
+                        </div>
+                    </div>
+                </div>
+                <div class="birthday-row">
+                    <div class="birthday">
+                        <span>วันเกิด<span class="red">*</span></span>
+                        <select aria-label="วันเกิด" required class="day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select aria-label="เดือนเกิด" required class="month">
+                            <option>มกราคม</option>
+                            <option>กุมภาพันธ์</option>
+                            <option>มีนาคม</option>
+                            <option>เมษายน</option>
+                            <option>พฤษภาคม</option>
+                            <option>มิถุนายน</option>
+                            <option>กรกฎาคม</option>
+                            <option>สิงหาคม</option>
+                            <option>กันยายน</option>
+                            <option>ตุลาคม</option>
+                            <option>พฤศจิกายน</option>
+                            <option>ธันวาคม</option>
+                        </select>
+                        <input aria-label="ปีเกิด พ.ศ." type="number" value="2544" min="2400" max="2570" required class="birth-year">
+                    </div>
+                    <div class="radio" aria-label="เพศ">
+                        <span>เพศ<span class="red">*</span></span>
+                        <label class="radio-label"><input name="gender" required type="radio" value="male"> ชาย</label>
+                        <label class="radio-label"><input name="gender" required type="radio" value="female"> หญิง</label>
+                    </div>
+                </div>
+                <div class="personal-input row">
+                    <div class="form-group half">
+                        <label for="ethnicity">เชื้อชาติ<span class="red">*</span></label>
+                        <select id="ethnicity" required>
+                            <option>ไทย</option>
+                            <option>อื่นๆ</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="nationality">สัญชาติ<span class="red">*</span></label>
+                        <select id="nationality" required>
+                            <option>ไทย</option>
+                            <option>อื่นๆ</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="house">บ้านเลขที่<span class="red">*</span></label>
+                        <input id="house" type="text" placeholder="บ้านเลขที่" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="village-number">หมู่ที่</label>
+                        <input id="village-number" type="text">
+                    </div>
+                    <div class="form-group half">
+                        <label for="building">หมู่บ้าน/ชื่ออาคาร</label>
+                        <input id="building" type="text" placeholder="ชื่อหมู่บ้าน/ชื่ออาคาร">
+                    </div>
+                    <div class="form-group half">
+                        <label for="lane">ซอย</label>
+                        <input id="lane" type="text" placeholder="ชื่อซอย">
+                    </div>
+                    <div class="form-group half">
+                        <label for="road">ถนน</label>
+                        <input id="road" type="text" placeholder="ชื่อถนน">
+                    </div>
+                    <div class="form-group half">
+                        <label for="province">จังหวัด<span class="red">*</span></label>
+                        <select id="province" required>
+                            <option value="">-</option>
+                            <option>กรุงเทพมหานคร</option>
+                            <option>นนทบุรี</option>
+                            <option>ปราจีนบุรี</option>
+                            <option>ระยอง</option>
+                            <option>สระบุรี</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="district">อำเภอ/เขต<span class="red">*</span></label>
+                        <select id="district" required>
+                            <option value="">-</option>
+                            <option>เมืองสระบุรี</option>
+                            <option>เมืองปราจีนบุรี</option>
+                            <option>บางซื่อ</option>
+                            <option>เมืองนนทบุรี</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="subdistrict">ตำบล/แขวง<span class="red">*</span></label>
+                        <select id="subdistrict" required>
+                            <option value="">-</option>
+                            <option>โคกสว่าง</option>
+                            <option>บางซื่อ</option>
+                            <option>ท่าทราย</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="postcode">รหัสไปรษณีย์<span class="red">*</span></label>
+                        <input id="postcode" type="text" placeholder="รหัสไปรษณีย์" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                    </div>
+                    <div class="form-group half">
+                        <label for="contact-email">อีเมล<span class="red">*</span></label>
+                        <input id="contact-email" type="email" placeholder="ex@gmail.com" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="mobile">เบอร์มือถือ<span class="red">*</span></label>
+                        <input id="mobile" type="tel" placeholder="เบอร์มือถือที่สามารถติดต่อได้" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="telephone">โทรศัพท์บ้าน</label>
+                        <input id="telephone" type="tel" placeholder="โทรศัพท์บ้าน">
+                    </div>
+                </div>
+            </section>
+            <!-- 2.5 ข้อมูลบิดา-มารดา -->
+            <section class="part family">
+                <h2>2.5 ข้อมูลบิดา-มารดา</h2>
+                <section class="parent">
+                    <h3>ข้อมูลบิดา</h3>
+                    <div class="thaid-data">
+                        <div class="thaid-heading">
+                            <img src="assets/thaid.webp" alt="ThaID">
+                            <h4>ข้อมูลบิดาจาก ThaID</h4>
+                        </div>
+                        <label for="thaid-father-personal">
+                            <input type="checkbox" id="thaid-father-personal">
+                            ดึงข้อมูลบัตรประชาชน และชื่อ-นามสกุลจาก ThaID
+                        </label>
+                        <label for="thaid-father-address">
+                            <input type="checkbox" id="thaid-father-address">
+                            ดึงข้อมูลที่อยู่ปัจจุบันจาก ThaID
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group third">
+                            <label for="father-title">คำนำหน้าชื่อ<span class="red">*</span></label>
+                            <select id="father-title" required>
+                                <option value="">-</option>
+                                <option value="นาย">นาย/Mr.</option>
+                                <option value="นาง">นาง/Mrs.</option>
+                                <option value="นางสาว">นางสาว/Miss</option>
+                            </select>
+                        </div>
+                        <div class="form-group third">
+                            <label for="father-first">ชื่อ<span class="red">*</span></label>
+                            <input id="father-first" type="text" placeholder="ชื่อภาษาไทย" required>
+                        </div>
+                        <div class="form-group third">
+                            <label for="father-last">นามสกุล<span class="red">*</span></label>
+                            <input id="father-last" type="text" placeholder="นามสกุลภาษาไทย" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span id="father-status-label">สถานะ<span class="red">*</span></span>
+                        <div class="radio">
+                            <label class="radio-label"><input name="father-status" required type="radio" value="1"> ยังมีชีวิตอยู่</label>
+                            <label class="radio-label"><input name="father-status" required type="radio" value="2"> เสียชีวิตแล้ว</label>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <span>ที่อยู่ที่ติดต่อได้สะดวก</span>
+                        <label class="radio-label"><input id="father-same-address" type="checkbox"> ที่อยู่เดียวกับผู้สมัคร</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group half">
+                            <label for="father-house">บ้านเลขที่<span class="red">*</span></label>
+                            <input id="father-house" type="text" placeholder="บ้านเลขที่" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="father-village-number">หมู่ที่</label>
+                            <input id="father-village-number" type="text">
+                        </div>
+                        <div class="form-group half">
+                            <label for="father-building">หมู่บ้าน/ชื่ออาคาร</label>
+                            <input id="father-building" type="text" placeholder="ชื่อหมู่บ้าน/ชื่ออาคาร">
+                        </div>
+                        <div class="form-group half">
+                            <label for="father-lane">ซอย</label>
+                            <input id="father-lane" type="text" placeholder="ชื่อซอย">
+                        </div>
+                        <div class="form-group half">
+                            <label for="father-province">จังหวัด<span class="red">*</span></label>
+                            <select id="father-province" required>
+                                <option value="">-</option>
+                                <option>กรุงเทพมหานคร</option>
+                                <option>นนทบุรี</option>
+                                <option>ปราจีนบุรี</option>
+                                <option>ระยอง</option>
+                                <option>สระบุรี</option>
+                            </select>
+                        </div>
+                        <div class="form-group half">
+                            <label for="father-district">อำเภอ/เขต<span class="red">*</span></label>
+                            <select id="father-district" required>
+                                <option value="">-</option>
+                                <option>เมืองสระบุรี</option>
+                                <option>เมืองปราจีนบุรี</option>
+                                <option>บางซื่อ</option>
+                                <option>เมืองนนทบุรี</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group third">
+                            <label for="father-postcode">รหัสไปรษณีย์<span class="red">*</span></label>
+                            <input id="father-postcode" type="text" placeholder="รหัสไปรษณีย์" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                        </div>
+                        <div class="form-group third">
+                            <label for="father-telephone">โทรศัพท์บ้าน</label>
+                            <input id="father-telephone" type="tel" placeholder="โทรศัพท์บ้าน">
+                        </div>
+                        <div class="form-group third">
+                            <label for="father-mobile">มือถือ</label>
+                            <input id="father-mobile" type="tel" placeholder="เบอร์มือถือ">
+                        </div>
+                    </div>
+                </section>
+                <section class="parent">
+                    <h3>ข้อมูลมารดา</h3>
+                    <div class="thaid-data">
+                        <div class="thaid-heading">
+                            <img src="assets/thaid.webp" alt="ThaID">
+                            <h4>ข้อมูลมารดาจาก ThaID</h4>
+                        </div>
+                        <label for="thaid-mother-personal">
+                            <input type="checkbox" id="thaid-mother-personal">
+                            ดึงข้อมูลบัตรประชาชน และชื่อ-นามสกุลจาก ThaID
+                        </label>
+                        <label for="thaid-mother-address">
+                            <input type="checkbox" id="thaid-mother-address">
+                            ดึงข้อมูลที่อยู่ปัจจุบันจาก ThaID
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group third">
+                            <label for="mother-title">คำนำหน้าชื่อ<span class="red">*</span></label>
+                            <select id="mother-title" required>
+                                <option value="">-</option>
+                                <option value="นาย">นาย/Mr.</option>
+                                <option value="นาง">นาง/Mrs.</option>
+                                <option value="นางสาว">นางสาว/Miss</option>
+                            </select>
+                        </div>
+                        <div class="form-group third">
+                            <label for="mother-first">ชื่อ<span class="red">*</span></label>
+                            <input id="mother-first" type="text" placeholder="ชื่อภาษาไทย" required>
+                        </div>
+                        <div class="form-group third">
+                            <label for="mother-last">นามสกุล<span class="red">*</span></label>
+                            <input id="mother-last" type="text" placeholder="นามสกุลภาษาไทย" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span id="mother-status-label">สถานะ<span class="red">*</span></span>
+                        <div class="radio">
+                            <label class="radio-label"><input name="mother-status" required type="radio" value="1"> ยังมีชีวิตอยู่</label>
+                            <label class="radio-label"><input name="mother-status" required type="radio" value="2"> เสียชีวิตแล้ว</label>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <span>ที่อยู่ที่ติดต่อได้สะดวก</span>
+                        <label class="radio-label"><input id="mother-same-address" type="checkbox"> ที่อยู่เดียวกับผู้สมัคร</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group half">
+                            <label for="mother-house">บ้านเลขที่<span class="red">*</span></label>
+                            <input id="mother-house" type="text" placeholder="บ้านเลขที่" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="mother-village-number">หมู่ที่</label>
+                            <input id="mother-village-number" type="text">
+                        </div>
+                        <div class="form-group half">
+                            <label for="mother-building">หมู่บ้าน/ชื่ออาคาร</label>
+                            <input id="mother-building" type="text" placeholder="ชื่อหมู่บ้าน/ชื่ออาคาร">
+                        </div>
+                        <div class="form-group half">
+                            <label for="mother-lane">ซอย</label>
+                            <input id="mother-lane" type="text" placeholder="ชื่อซอย">
+                        </div>
+                        <div class="form-group half">
+                            <label for="mother-province">จังหวัด<span class="red">*</span></label>
+                            <select id="mother-province" required>
+                                <option value="">-</option>
+                                <option>กรุงเทพมหานคร</option>
+                                <option>นนทบุรี</option>
+                                <option>ปราจีนบุรี</option>
+                                <option>ระยอง</option>
+                                <option>สระบุรี</option>
+                            </select>
+                        </div>
+                        <div class="form-group half">
+                            <label for="mother-district">อำเภอ/เขต<span class="red">*</span></label>
+                            <select id="mother-district" required>
+                                <option value="">-</option>
+                                <option>เมืองสระบุรี</option>
+                                <option>เมืองปราจีนบุรี</option>
+                                <option>บางซื่อ</option>
+                                <option>เมืองนนทบุรี</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group third">
+                            <label for="mother-postcode">รหัสไปรษณีย์<span class="red">*</span></label>
+                            <input id="mother-postcode" type="text" placeholder="รหัสไปรษณีย์" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                        </div>
+                        <div class="form-group third">
+                            <label for="mother-telephone">โทรศัพท์บ้าน</label>
+                            <input id="mother-telephone" type="tel" placeholder="โทรศัพท์บ้าน">
+                        </div>
+                        <div class="form-group third">
+                            <label for="mother-mobile">มือถือ</label>
+                            <input id="mother-mobile" type="tel" placeholder="เบอร์มือถือ">
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="buttons">
+                <a class="btn btn-wide" href="terms.html">ย้อนกลับ</a>
+                <button class="btn" type="submit">ถัดไป</button>
+            </div>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 สำนักคอมพิวเตอร์และเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p>
+    </footer>
+</body>
+</html>
