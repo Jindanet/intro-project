@@ -31,7 +31,7 @@
                     <div class="radio">
                         <label class="radio-label"><input name="qualification" required type="radio" value="1"> ม.3</label>
                         <label class="radio-label"><input name="qualification" required type="radio" value="2"> ปวช</label>
-                        <label class="radio-label"><input name="qualification" required type="radio" value="3"> ปวส</label>
+                        <label class="radio-label"><input name="qualification" required type="radio" value="3" checked> ปวส</label>
                         <label class="radio-label"><input name="qualification" required type="radio" value="4"> อนุปริญญา</label>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         <label for="education-0">ประเภทวิชา<span class="red">*</span></label>
                         <select id="education-0" required>
                             <option value="">-</option>
-                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option selected>เทคโนโลยีสารสนเทศ</option>
                             <option>อุตสาหกรรม</option>
                             <option>พาณิชยกรรม</option>
                         </select>
@@ -49,7 +49,7 @@
                         <label for="education-1">กลุ่มวิชา<span class="red">*</span></label>
                         <select id="education-1" required>
                             <option value="">-</option>
-                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option selected>เทคโนโลยีสารสนเทศ</option>
                             <option>อุตสาหกรรม</option>
                             <option>พาณิชยกรรม</option>
                         </select>
@@ -58,7 +58,7 @@
                         <label for="education-2">สาขาวิชา<span class="red">*</span></label>
                         <select id="education-2" required>
                             <option value="">-</option>
-                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option selected>เทคโนโลยีสารสนเทศ</option>
                             <option>อุตสาหกรรม</option>
                             <option>พาณิชยกรรม</option>
                         </select>
@@ -67,7 +67,7 @@
                         <label for="education-3">สาขางาน<span class="red">*</span></label>
                         <select id="education-3" required>
                             <option value="">-</option>
-                            <option>เทคโนโลยีสารสนเทศ</option>
+                            <option selected>เทคโนโลยีสารสนเทศ</option>
                             <option>อุตสาหกรรม</option>
                             <option>พาณิชยกรรม</option>
                         </select>
@@ -80,24 +80,24 @@
                 <div class="school-input">
                     <div class="form-group">
                         <label for="school-province">จังหวัดที่ตั้งสถานศึกษา<span class="red">*</span></label>
-                        <input id="school-province" type="text" required>
+                        <input id="school-province" type="text" value="สระบุรี" required>
                     </div>
                     <div class="form-group">
                         <label for="school-name">ชื่อสถานศึกษา<span class="red">*</span></label>
-                        <input id="school-name" type="text" required>
+                        <input id="school-name" type="text" value="วิทยาลัยเทคนิคสระบุรี" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <span id="education-status-label">สถานะการศึกษา<span class="red">*</span></span>
                     <div class="radio">
                         <label class="radio-label"><input name="education-status" required type="radio" value="1"> สำเร็จการศึกษา</label>
-                        <label class="radio-label"><input name="education-status" required type="radio" value="2"> กำลังศึกษาอยู่</label>
+                        <label class="radio-label"><input name="education-status" required type="radio" value="2" checked> กำลังศึกษาอยู่</label>
                     </div>
                 </div>
                 <div class="grade">
                     <div class="form-group">
                         <label for="grade">คะแนนเฉลี่ยสะสมถึงภาคเรียนสุดท้าย<span class="red">*</span></label>
-                        <input id="grade" type="number" required min="0" max="4" step="0.01">
+                        <input id="grade" type="number" value="4.00" required min="0" max="4" step="0.01">
                     </div>
                 </div>
             </section>
@@ -119,7 +119,7 @@
                                 <td>
                                     <select aria-label="คณะอันดับที่ 1" id="faculty-1" required>
                                         <option value="">— เลือกคณะ —</option>
-                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option selected>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
                                         <option>คณะวิศวกรรมศาสตร์</option>
                                         <option>คณะวิทยาศาสตร์ประยุกต์</option>
                                     </select>
@@ -127,7 +127,7 @@
                                 <td>
                                     <select aria-label="สาขาวิชาอันดับที่ 1" id="major-1" required>
                                         <option value="">— เลือกสาขาวิชาที่ต้องการ —</option>
-                                        <option>วิศวกรรมสารสนเทศและเครือข่าย</option>
+                                        <option selected>วิศวกรรมสารสนเทศและเครือข่าย</option>
                                         <option>เทคโนโลยีสารสนเทศ</option>
                                         <option>วิทยาการคอมพิวเตอร์</option>
                                     </select>
@@ -242,18 +242,18 @@
                         <h3>ข้อมูลผู้สมัครจาก ThaID</h3>
                     </div>
                     <label for="thaid-personal">
-                        <input type="checkbox" id="thaid-personal">
+                        <input type="checkbox" id="thaid-personal" checked>
                         ดึงข้อมูลบัตรประชาชน และชื่อ-นามสกุลจาก ThaID
                     </label>
                     <label for="thaid-address">
-                        <input type="checkbox" id="thaid-address">
+                        <input type="checkbox" id="thaid-address" checked>
                         ดึงข้อมูลที่อยู่ปัจจุบันจาก ThaID
                     </label>
                 </div>
                 <div class="row">
                     <div class="form-group third">
                         <label for="citizen-id">เลขประจำตัวประชาชน<span class="red">*</span></label>
-                        <input id="citizen-id" type="text" placeholder="11999000xxxxx" required inputmode="numeric" pattern="[0-9]{13}" maxlength="13">
+                        <input id="citizen-id" type="text" placeholder="11999000xxxxx" value="1234567890123" required inputmode="numeric" pattern="[0-9]{13}" maxlength="13">
                     </div>
                     <div class="form-group third">
                         <label for="title">คำนำหน้าชื่อ<span class="red">*</span></label>
@@ -278,15 +278,15 @@
                     <div class="fullname">
                         <p>ชื่อ นามสกุล (ภาษาไทย)<span class="red">*</span></p>
                         <div class="row">
-                            <input id="thai-first" aria-label="ชื่อภาษาไทย" type="text" placeholder="ชื่อภาษาไทย" required class="half">
-                            <input id="thai-last" aria-label="นามสกุลภาษาไทย" type="text" placeholder="นามสกุลภาษาไทย" required class="half">
+                            <input id="thai-first" aria-label="ชื่อภาษาไทย" type="text" placeholder="ชื่อภาษาไทย" value="ธนาพิพัฒน์" required class="half">
+                            <input id="thai-last" aria-label="นามสกุลภาษาไทย" type="text" placeholder="นามสกุลภาษาไทย" value="จินดาเนตร" required class="half">
                         </div>
                     </div>
                     <div class="fullname">
                         <p>ชื่อ นามสกุล (ภาษาอังกฤษ)<span class="red">*</span></p>
                         <div class="row">
-                            <input id="english-first" aria-label="ชื่อภาษาอังกฤษ" type="text" placeholder="FIRST NAME" required class="half">
-                            <input id="english-last" aria-label="นามสกุลภาษาอังกฤษ" type="text" placeholder="LAST NAME" required class="half">
+                            <input id="english-first" aria-label="ชื่อภาษาอังกฤษ" type="text" placeholder="FIRST NAME" value="THANAPIPHAT" required class="half">
+                            <input id="english-last" aria-label="นามสกุลภาษาอังกฤษ" type="text" placeholder="LAST NAME" value="JINDANET" required class="half">
                         </div>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
                             <option>6</option>
                             <option>7</option>
                             <option>8</option>
-                            <option>9</option>
+                            <option selected>9</option>
                             <option>10</option>
                             <option>11</option>
                             <option>12</option>
@@ -335,16 +335,16 @@
                             <option>มิถุนายน</option>
                             <option>กรกฎาคม</option>
                             <option>สิงหาคม</option>
-                            <option>กันยายน</option>
+                            <option selected>กันยายน</option>
                             <option>ตุลาคม</option>
                             <option>พฤศจิกายน</option>
                             <option>ธันวาคม</option>
                         </select>
-                        <input aria-label="ปีเกิด พ.ศ." type="number" value="2544" min="2400" max="2570" required class="birth-year">
+                        <input aria-label="ปีเกิด พ.ศ." type="number" value="2548" min="2400" max="2570" required class="birth-year">
                     </div>
                     <div class="radio" aria-label="เพศ">
                         <span>เพศ<span class="red">*</span></span>
-                        <label class="radio-label"><input name="gender" required type="radio" value="male"> ชาย</label>
+                        <label class="radio-label"><input name="gender" required type="radio" value="male" checked> ชาย</label>
                         <label class="radio-label"><input name="gender" required type="radio" value="female"> หญิง</label>
                     </div>
                 </div>
@@ -365,11 +365,11 @@
                     </div>
                     <div class="form-group half">
                         <label for="house">บ้านเลขที่<span class="red">*</span></label>
-                        <input id="house" type="text" placeholder="บ้านเลขที่" required>
+                        <input id="house" type="text" placeholder="บ้านเลขที่" value="99/9" required>
                     </div>
                     <div class="form-group half">
                         <label for="village-number">หมู่ที่</label>
-                        <input id="village-number" type="text">
+                        <input id="village-number" type="text" value="1">
                     </div>
                     <div class="form-group half">
                         <label for="building">หมู่บ้าน/ชื่ออาคาร</label>
@@ -391,14 +391,14 @@
                             <option>นนทบุรี</option>
                             <option>ปราจีนบุรี</option>
                             <option>ระยอง</option>
-                            <option>สระบุรี</option>
+                            <option selected>สระบุรี</option>
                         </select>
                     </div>
                     <div class="form-group half">
                         <label for="district">อำเภอ/เขต<span class="red">*</span></label>
                         <select id="district" required>
                             <option value="">-</option>
-                            <option>เมืองสระบุรี</option>
+                            <option selected>เมืองสระบุรี</option>
                             <option>เมืองปราจีนบุรี</option>
                             <option>บางซื่อ</option>
                             <option>เมืองนนทบุรี</option>
@@ -408,22 +408,22 @@
                         <label for="subdistrict">ตำบล/แขวง<span class="red">*</span></label>
                         <select id="subdistrict" required>
                             <option value="">-</option>
-                            <option>โคกสว่าง</option>
+                            <option selected>โคกสว่าง</option>
                             <option>บางซื่อ</option>
                             <option>ท่าทราย</option>
                         </select>
                     </div>
                     <div class="form-group half">
                         <label for="postcode">รหัสไปรษณีย์<span class="red">*</span></label>
-                        <input id="postcode" type="text" placeholder="รหัสไปรษณีย์" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                        <input id="postcode" type="text" placeholder="รหัสไปรษณีย์" value="18000" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
                     </div>
                     <div class="form-group half">
                         <label for="contact-email">อีเมล<span class="red">*</span></label>
-                        <input id="contact-email" type="email" placeholder="ex@gmail.com" required>
+                        <input id="contact-email" type="email" placeholder="ex@gmail.com" value="thanapiphat@gmail.com" required>
                     </div>
                     <div class="form-group half">
                         <label for="mobile">เบอร์มือถือ<span class="red">*</span></label>
-                        <input id="mobile" type="tel" placeholder="เบอร์มือถือที่สามารถติดต่อได้" required>
+                        <input id="mobile" type="tel" placeholder="เบอร์มือถือที่สามารถติดต่อได้" value="081-234-5678" required>
                     </div>
                     <div class="form-group half">
                         <label for="telephone">โทรศัพท์บ้าน</label>
@@ -455,39 +455,39 @@
                             <label for="father-title">คำนำหน้าชื่อ<span class="red">*</span></label>
                             <select id="father-title" required>
                                 <option value="">-</option>
-                                <option value="นาย">นาย/Mr.</option>
+                                <option value="นาย" selected>นาย/Mr.</option>
                                 <option value="นาง">นาง/Mrs.</option>
                                 <option value="นางสาว">นางสาว/Miss</option>
                             </select>
                         </div>
                         <div class="form-group third">
                             <label for="father-first">ชื่อ<span class="red">*</span></label>
-                            <input id="father-first" type="text" placeholder="ชื่อภาษาไทย" required>
+                            <input id="father-first" type="text" placeholder="ชื่อภาษาไทย" value="ประเสริฐ" required>
                         </div>
                         <div class="form-group third">
                             <label for="father-last">นามสกุล<span class="red">*</span></label>
-                            <input id="father-last" type="text" placeholder="นามสกุลภาษาไทย" required>
+                            <input id="father-last" type="text" placeholder="นามสกุลภาษาไทย" value="จินดาเนตร" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <span id="father-status-label">สถานะ<span class="red">*</span></span>
                         <div class="radio">
-                            <label class="radio-label"><input name="father-status" required type="radio" value="1"> ยังมีชีวิตอยู่</label>
+                        <label class="radio-label"><input name="father-status" required type="radio" value="1" checked> ยังมีชีวิตอยู่</label>
                             <label class="radio-label"><input name="father-status" required type="radio" value="2"> เสียชีวิตแล้ว</label>
                         </div>
                     </div>
                     <div class="address">
                         <span>ที่อยู่ที่ติดต่อได้สะดวก</span>
-                        <label class="radio-label"><input id="father-same-address" type="checkbox"> ที่อยู่เดียวกับผู้สมัคร</label>
+                        <label class="radio-label"><input id="father-same-address" type="checkbox" checked> ที่อยู่เดียวกับผู้สมัคร</label>
                     </div>
                     <div class="row">
                         <div class="form-group half">
                             <label for="father-house">บ้านเลขที่<span class="red">*</span></label>
-                            <input id="father-house" type="text" placeholder="บ้านเลขที่" required>
+                            <input id="father-house" type="text" placeholder="บ้านเลขที่" value="99/9" required>
                         </div>
                         <div class="form-group half">
                             <label for="father-village-number">หมู่ที่</label>
-                            <input id="father-village-number" type="text">
+                            <input id="father-village-number" type="text" value="1">
                         </div>
                         <div class="form-group half">
                             <label for="father-building">หมู่บ้าน/ชื่ออาคาร</label>
@@ -505,14 +505,14 @@
                                 <option>นนทบุรี</option>
                                 <option>ปราจีนบุรี</option>
                                 <option>ระยอง</option>
-                                <option>สระบุรี</option>
+                                <option selected>สระบุรี</option>
                             </select>
                         </div>
                         <div class="form-group half">
                             <label for="father-district">อำเภอ/เขต<span class="red">*</span></label>
                             <select id="father-district" required>
                                 <option value="">-</option>
-                                <option>เมืองสระบุรี</option>
+                                <option selected>เมืองสระบุรี</option>
                                 <option>เมืองปราจีนบุรี</option>
                                 <option>บางซื่อ</option>
                                 <option>เมืองนนทบุรี</option>
@@ -522,7 +522,7 @@
                     <div class="row">
                         <div class="form-group third">
                             <label for="father-postcode">รหัสไปรษณีย์<span class="red">*</span></label>
-                            <input id="father-postcode" type="text" placeholder="รหัสไปรษณีย์" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                            <input id="father-postcode" type="text" placeholder="รหัสไปรษณีย์" value="18000" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
                         </div>
                         <div class="form-group third">
                             <label for="father-telephone">โทรศัพท์บ้าน</label>
@@ -530,7 +530,7 @@
                         </div>
                         <div class="form-group third">
                             <label for="father-mobile">มือถือ</label>
-                            <input id="father-mobile" type="tel" placeholder="เบอร์มือถือ">
+                            <input id="father-mobile" type="tel" placeholder="เบอร์มือถือ" value="081-111-2222">
                         </div>
                     </div>
                 </section>
@@ -557,37 +557,37 @@
                                 <option value="">-</option>
                                 <option value="นาย">นาย/Mr.</option>
                                 <option value="นาง">นาง/Mrs.</option>
-                                <option value="นางสาว">นางสาว/Miss</option>
+                                <option value="นางสาว" selected>นางสาว/Miss</option>
                             </select>
                         </div>
                         <div class="form-group third">
                             <label for="mother-first">ชื่อ<span class="red">*</span></label>
-                            <input id="mother-first" type="text" placeholder="ชื่อภาษาไทย" required>
+                            <input id="mother-first" type="text" placeholder="ชื่อภาษาไทย" value="ญาสุมินทร์" required>
                         </div>
                         <div class="form-group third">
                             <label for="mother-last">นามสกุล<span class="red">*</span></label>
-                            <input id="mother-last" type="text" placeholder="นามสกุลภาษาไทย" required>
+                            <input id="mother-last" type="text" placeholder="นามสกุลภาษาไทย" value="หมวกไสว" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <span id="mother-status-label">สถานะ<span class="red">*</span></span>
                         <div class="radio">
-                            <label class="radio-label"><input name="mother-status" required type="radio" value="1"> ยังมีชีวิตอยู่</label>
+                        <label class="radio-label"><input name="mother-status" required type="radio" value="1" checked> ยังมีชีวิตอยู่</label>
                             <label class="radio-label"><input name="mother-status" required type="radio" value="2"> เสียชีวิตแล้ว</label>
                         </div>
                     </div>
                     <div class="address">
                         <span>ที่อยู่ที่ติดต่อได้สะดวก</span>
-                        <label class="radio-label"><input id="mother-same-address" type="checkbox"> ที่อยู่เดียวกับผู้สมัคร</label>
+                        <label class="radio-label"><input id="mother-same-address" type="checkbox" checked> ที่อยู่เดียวกับผู้สมัคร</label>
                     </div>
                     <div class="row">
                         <div class="form-group half">
                             <label for="mother-house">บ้านเลขที่<span class="red">*</span></label>
-                            <input id="mother-house" type="text" placeholder="บ้านเลขที่" required>
+                            <input id="mother-house" type="text" placeholder="บ้านเลขที่" value="99/9" required>
                         </div>
                         <div class="form-group half">
                             <label for="mother-village-number">หมู่ที่</label>
-                            <input id="mother-village-number" type="text">
+                            <input id="mother-village-number" type="text" value="1">
                         </div>
                         <div class="form-group half">
                             <label for="mother-building">หมู่บ้าน/ชื่ออาคาร</label>
@@ -605,14 +605,14 @@
                                 <option>นนทบุรี</option>
                                 <option>ปราจีนบุรี</option>
                                 <option>ระยอง</option>
-                                <option>สระบุรี</option>
+                                <option selected>สระบุรี</option>
                             </select>
                         </div>
                         <div class="form-group half">
                             <label for="mother-district">อำเภอ/เขต<span class="red">*</span></label>
                             <select id="mother-district" required>
                                 <option value="">-</option>
-                                <option>เมืองสระบุรี</option>
+                                <option selected>เมืองสระบุรี</option>
                                 <option>เมืองปราจีนบุรี</option>
                                 <option>บางซื่อ</option>
                                 <option>เมืองนนทบุรี</option>
@@ -622,7 +622,7 @@
                     <div class="row">
                         <div class="form-group third">
                             <label for="mother-postcode">รหัสไปรษณีย์<span class="red">*</span></label>
-                            <input id="mother-postcode" type="text" placeholder="รหัสไปรษณีย์" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
+                            <input id="mother-postcode" type="text" placeholder="รหัสไปรษณีย์" value="18000" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5">
                         </div>
                         <div class="form-group third">
                             <label for="mother-telephone">โทรศัพท์บ้าน</label>
@@ -630,7 +630,7 @@
                         </div>
                         <div class="form-group third">
                             <label for="mother-mobile">มือถือ</label>
-                            <input id="mother-mobile" type="tel" placeholder="เบอร์มือถือ">
+                            <input id="mother-mobile" type="tel" placeholder="เบอร์มือถือ" value="081-333-4444">
                         </div>
                     </div>
                 </section>

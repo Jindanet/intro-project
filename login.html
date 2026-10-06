@@ -24,9 +24,9 @@
         <form class="login-form" action="terms.html" method="get">
             <h1 class="title">เข้าสู่ระบบ</h1>
             <label for="login-id">เลขประจำตัวประชาชน / เลขที่หนังสือเดินทาง<span class="red">*</span></label>
-            <input type="text" id="login-id" placeholder="11999000xxxxx" required>
+            <input type="text" id="login-id" placeholder="11999000xxxxx" value="1234567890123" required>
             <label for="login-password">รหัสผ่าน<span class="red">*</span></label>
-            <input type="password" id="login-password" placeholder="กรอกรหัสผ่าน" required>
+            <input type="password" id="login-password" placeholder="กรอกรหัสผ่าน" value="test1234" required>
             <div class="buttons">
                 <button class="btn" type="submit">เข้าสู่ระบบ</button>
             </div>
@@ -39,10 +39,11 @@
                 </a>
             </div>
             <div class="links">
-				<a href="https://kmutnb.ac.th/contact-us.aspx" target="_blank">
-					ลืมรหัสผ่านหรือไม่?
-				</a>
-                <p>สร้างบัญชีผู้ใช้งาน<a href="index.html"> คลิกที่นี่</a></p>
+                <details class="forgot">
+                    <summary>ลืมรหัสผ่านหรือไม่?</summary>
+                    <p>เว็บไซต์นี้เป็นแบบจำลองสำหรับการศึกษา ยังไม่มีระบบบัญชีผู้ใช้หรือกู้คืนรหัสผ่าน สามารถกรอกข้อมูลตัวอย่างเพื่อดูหน้าถัดไปได้</p>
+                </details>
+                <p>สร้างบัญชีผู้ใช้งาน<a href="index.html">คลิกที่นี่</a></p>
             </div>
         </form>
     </main>

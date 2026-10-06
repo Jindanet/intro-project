@@ -43,16 +43,6 @@
     padding-bottom: 65px;
 }
 
-.links a {
-    text-decoration: none;
-}
-
-.links {
-    margin-top: 35px;
-    text-align: center;
-}
-
-
 @media (max-width: 700px) {
     .register-row { display: block; width: 100%; }
     .register-col { width: 100%; }
